@@ -1,0 +1,11 @@
+.charName {
+    font-size: 2.5rem;
+    color: white;
+    padding: 15px 0 5px 0;
+}
+
+.birthDate{
+    font-size: 2rem;
+    color: red;
+    padding: 5px;
+}

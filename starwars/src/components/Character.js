@@ -7,8 +7,8 @@ function Character(props) {
   console.log(props);
   return (
     <div>
-      <h1>{props.character.name}</h1>
-      <h2>Born on {props.character.birth_year}</h2>
+      <h1 className="charName">{props.character.name}</h1>
+      <h2 className="birthDate">Born on {props.character.birth_year}</h2>
     </div>
   );
 }
