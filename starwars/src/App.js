@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList'
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       starwarsChars: []
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -32,7 +33,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+         <a href="https://fontmeme.com/star-wars-font/"><img src="https://fontmeme.com/permalink/190111/f4a4a9fcd5ec89534738f5748ddde01c.png" alt="star-wars-font" border="0"/></a>
+
+        <CharacterList 
+        starwarsChars={this.state.starwarsChars}
+        />
       </div>
     );
   }

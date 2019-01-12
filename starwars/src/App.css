@@ -1,8 +1,18 @@
 .App {
+  background-color: black;
+  width: 500px;
   text-align: center;
+  margin: 0 auto;
+  opacity: 0.7;
 }
+
+img {
+  width: 500px;
+  margin: 0 auto;
+}
+
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  font-size: 4rem;
+  color: #FFDE06;
+  padding: 20px 0 10px 0;
 }
-/* write your parent styles in here for your App.js */
